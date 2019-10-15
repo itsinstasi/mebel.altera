@@ -30,6 +30,9 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#fff">
 
+    <!--modernizr-->
+	<script src="js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -56,141 +59,152 @@
 		</header>	
 		<div class="main">
 
-			<div class="stories" style="display: none;">
-				<div class="container">
+		<div class="stories">
+			<div class="container">
+				<div class="stories__slider-wrap">
 					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="mebel">
-								<a href="./tags/./mebel.html">
-									<div class="stories__slide-pic"><img src="./img/og/mebel.png" alt="mebel" /></div>
-									<div class="stories__slide-txt">mebel</div>
-								</a>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="stories__slide" title="mebel">
+									<a href="./tags/./mebel.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/mebel.png);"></div>
+										<div class="stories__slide-txt">mebel</div>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="altera">
-								<a href="./tags/./altera.html">
-									<div class="stories__slide-pic"><img src="./img/og/altera.png" alt="altera" /></div>
-									<div class="stories__slide-txt">altera</div>
-								</a>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="altera">
+									<a href="./tags/./altera.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/altera.png);"></div>
+										<div class="stories__slide-txt">altera</div>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель">
-								<a href="./tags/./mebel-.html">
-									<div class="stories__slide-pic"><img src="./img/og/mebel-.png" alt="мебель" /></div>
-									<div class="stories__slide-txt">мебель</div>
-								</a>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="мебель">
+									<a href="./tags/./mebel-.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/mebel-.png);"></div>
+										<div class="stories__slide-txt">мебель</div>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="альтера">
-								<a href="./tags/./al-tera.html">
-									<div class="stories__slide-pic"><img src="./img/og/al-tera.png" alt="альтера" /></div>
-									<div class="stories__slide-txt">альтера</div>
-								</a>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="альтера">
+									<a href="./tags/./al-tera.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/al-tera.png);"></div>
+										<div class="stories__slide-txt">альтера</div>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="арзамас">
-								<a href="./tags/./arzamas.html">
-									<div class="stories__slide-pic"><img src="./img/og/arzamas.png" alt="арзамас" /></div>
-									<div class="stories__slide-txt">арзамас</div>
-								</a>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="арзамас">
+									<a href="./tags/./arzamas.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/arzamas.png);"></div>
+										<div class="stories__slide-txt">арзамас</div>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="магазин мебели">
-								<a href="./tags/./magazin-mebeli.html">
-									<div class="stories__slide-pic"><img src="./img/og/magazin-mebeli.png" alt="магазин мебели" /></div>
-									<div class="stories__slide-txt">магазин мебели</div>
-								</a>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="магазин мебели">
+									<a href="./tags/./magazin-mebeli.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/magazin-mebeli.png);"></div>
+										<div class="stories__slide-txt">магазин мебели</div>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель на заказ">
-								<a href="./tags/./mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="./img/og/mebel--na-zakaz.png" alt="мебель на заказ" /></div>
-									<div class="stories__slide-txt">мебель на заказ</div>
-								</a>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="мебель на заказ">
+									<a href="./tags/./mebel--na-zakaz.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/mebel--na-zakaz.png);"></div>
+										<div class="stories__slide-txt">мебель на заказ</div>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="корпусная мебель">
-								<a href="./tags/./korpusnaya-mebel-.html">
-									<div class="stories__slide-pic"><img src="./img/og/korpusnaya-mebel-.png" alt="корпусная мебель" /></div>
-									<div class="stories__slide-txt">корпусная мебель</div>
-								</a>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="корпусная мебель">
+									<a href="./tags/./korpusnaya-mebel-.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/korpusnaya-mebel-.png);"></div>
+										<div class="stories__slide-txt">корпусная мебель</div>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="корпусная мебель на заказ">
-								<a href="./tags/./korpusnaya-mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="./img/og/korpusnaya-mebel--na-zakaz.png" alt="корпусная мебель на заказ" /></div>
-									<div class="stories__slide-txt">корпусная мебель на заказ</div>
-								</a>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="корпусная мебель на заказ">
+									<a href="./tags/./korpusnaya-mebel--na-zakaz.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/korpusnaya-mebel--na-zakaz.png);"></div>
+										<div class="stories__slide-txt">корпусная мебель на заказ</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+					<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 				</div>
 			</div>
+		</div>
 
 			<div class="links-page">
 				<div class="container">
-					<div class="links-page-list">
-						<div class="links-page-list__item">
-							<a href="https://www.mebel-altera.ru" class="links-page-list__item-link" target="_blank">
-								<strong>Главный сайт</strong>
-							</a>
-						</div>
-						<div class="links-page-list__item">
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLScZKVZ-IWakhdYW-Hz7pJuKAfENLm1BvHjLcXc0lxWSJmH9cw/viewform" class="links-page-list__item-link" target="_blank">
-								<strong>Запись на консультацию</strong>
-							</a>
-						</div>
-						<div class="links-page-list__item">
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLScJPvAsXLJk0AS_NJgIwE6aUvNtVZ7gKEemefQmDpebOPkKfQ/viewform" class="links-page-list__item-link" target="_blank">
-								<strong>Заказать обратный звонок</strong>
-							</a>
-						</div>
-						<div class="links-page-list__item">
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSc2VOVPrk4wAzSclflEVEWe5WzM9JTdQcqQ02jhq4a8be4tEA/viewform" class="links-page-list__item-link" target="_blank">
-								<strong>Бесплатный замер</strong>
-							</a>
-						</div>
-					</div>
-					<div class="links-page-bar">
-						<div class="banner__main-title">Свяжитесь с нами</div>
-						<div class="links-page-bar__banner">
-							<div class="banner__main-row">
-								<a href="https://wa.me/79527876666" target="_blank" 
-								class="banner__main-item">
-									<div class="banner__main-item-ring"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
-									<div class="banner__main-item-txt">WhatsApp</div>
-								</a>
-								<a href="mailto:altera.mebel@gmail.com" target="_blank" 
-								class="banner__main-item">
-									<div class="banner__main-item-ring"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-									<div class="banner__main-item-txt">Заявка</div>
-								</a>
-								<a href="https://www.instagram.com/mebel.altera" target="_blank" 
-								class="banner__main-item">
-									<div class="banner__main-item-ring"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-									<div class="banner__main-item-txt">Instagram</div>
-								</a>
-							</div>
-						</div>
+
+					<div class="links-page-title"></div>
+
+					<div class="links-page-messagers">
+						<a href="https://wa.me/79527876666" target="_blank" 
+							class="links-page-messager">
+							<i class="fa fa-whatsapp" aria-hidden="true"></i>WhatsApp
+						</a>
+
+
+
+
+						<a href="mailto:altera.mebel@gmail.com" target="_blank" 
+							class="links-page-messager">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>E-mail
+						</a>
+
+
+						<a href="https://www.instagram.com/mebel.altera" target="_blank" class="links-page-messager">
+							<i class="fa fa-instagram" aria-hidden="true"></i>Instagram
+						</a>
 					</div>
 
+					<div class="links-page-list">
+						<a href="https://www.mebel-altera.ru" class="links-page-btn" target="_blank">
+							<strong>Главный сайт</strong>
+						</a>
+
+
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLScZKVZ-IWakhdYW-Hz7pJuKAfENLm1BvHjLcXc0lxWSJmH9cw/viewform" class="links-page-btn" target="_blank">
+							<strong>Запись на консультацию</strong>
+						</a>
+
+
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLScJPvAsXLJk0AS_NJgIwE6aUvNtVZ7gKEemefQmDpebOPkKfQ/viewform" class="links-page-btn" target="_blank">
+							<strong>Заказать обратный звонок</strong>
+						</a>
+
+
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSc2VOVPrk4wAzSclflEVEWe5WzM9JTdQcqQ02jhq4a8be4tEA/viewform" class="links-page-btn" target="_blank">
+							<strong>Бесплатный замер</strong>
+						</a>
+
+
+					</div>
+
+					<div class="links-page-soc">
+						<a href="https://www.instagram.com/mebel.altera" target="_blank" 
+							class="links-page-soc__link" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</div>
+					<div class="links-page-footer">@mebel.altera рекомендует SHORTWAYTOPAY</div>
 				</div>
 			</div>	
 		</div>			
 	</div>
+	<!--swiper-->
+	<script src="js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="js/vendors/jquery.min.js"></script>
-	<script src="js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="js/vendors/slick.min.js"></script>
 	<!--init-->
 	<script src="js/jquery.init.js"></script>
 	<!--my scripts-->

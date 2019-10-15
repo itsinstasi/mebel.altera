@@ -30,11 +30,11 @@
     <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#fff">
     
-    <link rel="image_src" href="https://scontent-arn2-2.cdninstagram.com/vp/a8d9355efacfe9f8df48ac847f91592d/5E3B4CA2/t51.2885-15/e35/68713232_494137864746204_8194888566601392441_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" />
+    <link rel="image_src" href="https://scontent-arn2-2.cdninstagram.com/vp/09562ec9704e48d917d97da9823fa00d/5E62D9A2/t51.2885-15/e35/68713232_494137864746204_8194888566601392441_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" />
     <meta name="robots" content="INDEX, FOLLOW" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://mebel-altera.itsinsta.site/posts/sozdanie-uyutnogo-pomeshcheniya-detyam-prinosit-roditelyam-mnogo-polozhitel-nykh-emotsiy.html" />
-    <meta property="og:image" content="https://scontent-arn2-2.cdninstagram.com/vp/a8d9355efacfe9f8df48ac847f91592d/5E3B4CA2/t51.2885-15/e35/68713232_494137864746204_8194888566601392441_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" />
+    <meta property="og:image" content="https://scontent-arn2-2.cdninstagram.com/vp/09562ec9704e48d917d97da9823fa00d/5E62D9A2/t51.2885-15/e35/68713232_494137864746204_8194888566601392441_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="960"/>
     <meta property="og:image:height" content="960"/>
@@ -42,6 +42,9 @@
     <meta property="og:description" content="Создание уютного помещения детям приносит родителям много положительных эмоций." />
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="mebel.altera" />
+
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
 
 </head>
 <body>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -68,81 +71,87 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="mebel">
-								<a href="../tags/./mebel.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel.png" alt="mebel" /></div>
-									<div class="stories__slide-txt">mebel</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="mebel">
+										<a href="../tags/./mebel.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel.png);"></div>
+											<div class="stories__slide-txt">mebel</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="altera">
+										<a href="../tags/./altera.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/altera.png);"></div>
+											<div class="stories__slide-txt">altera</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель">
+										<a href="../tags/./mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel-.png);"></div>
+											<div class="stories__slide-txt">мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="альтера">
+										<a href="../tags/./al-tera.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/al-tera.png);"></div>
+											<div class="stories__slide-txt">альтера</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="арзамас">
+										<a href="../tags/./arzamas.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/arzamas.png);"></div>
+											<div class="stories__slide-txt">арзамас</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="магазин мебели">
+										<a href="../tags/./magazin-mebeli.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/magazin-mebeli.png);"></div>
+											<div class="stories__slide-txt">магазин мебели</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель на заказ">
+										<a href="../tags/./mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">мебель на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="корпусная мебель">
+										<a href="../tags/./korpusnaya-mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/korpusnaya-mebel-.png);"></div>
+											<div class="stories__slide-txt">корпусная мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="корпусная мебель на заказ">
+										<a href="../tags/./korpusnaya-mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/korpusnaya-mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">корпусная мебель на заказ</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="altera">
-								<a href="../tags/./altera.html">
-									<div class="stories__slide-pic"><img src="../img/og/altera.png" alt="altera" /></div>
-									<div class="stories__slide-txt">altera</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель">
-								<a href="../tags/./mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel-.png" alt="мебель" /></div>
-									<div class="stories__slide-txt">мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="альтера">
-								<a href="../tags/./al-tera.html">
-									<div class="stories__slide-pic"><img src="../img/og/al-tera.png" alt="альтера" /></div>
-									<div class="stories__slide-txt">альтера</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="арзамас">
-								<a href="../tags/./arzamas.html">
-									<div class="stories__slide-pic"><img src="../img/og/arzamas.png" alt="арзамас" /></div>
-									<div class="stories__slide-txt">арзамас</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="магазин мебели">
-								<a href="../tags/./magazin-mebeli.html">
-									<div class="stories__slide-pic"><img src="../img/og/magazin-mebeli.png" alt="магазин мебели" /></div>
-									<div class="stories__slide-txt">магазин мебели</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель на заказ">
-								<a href="../tags/./mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--na-zakaz.png" alt="мебель на заказ" /></div>
-									<div class="stories__slide-txt">мебель на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="корпусная мебель">
-								<a href="../tags/./korpusnaya-mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/korpusnaya-mebel-.png" alt="корпусная мебель" /></div>
-									<div class="stories__slide-txt">корпусная мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="корпусная мебель на заказ">
-								<a href="../tags/./korpusnaya-mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/korpusnaya-mebel--na-zakaz.png" alt="корпусная мебель на заказ" /></div>
-									<div class="stories__slide-txt">корпусная мебель на заказ</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -167,22 +176,41 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/a8d9355efacfe9f8df48ac847f91592d/5E3B4CA2/t51.2885-15/e35/68713232_494137864746204_8194888566601392441_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/f8b9c6ac97e3ce318f07a9dbd885d284/5E1B0E3D/t51.2885-15/e35/67529503_151962279226516_4932364832489268962_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/5cac92d319ea2ddda9fde08aabd606e5/5E222E90/t51.2885-15/e35/67307649_147007136398674_3601008299876921356_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/cc3d840439236647bd7cfce3672009c3/5E30E6F3/t51.2885-15/e35/67725764_1331454693700047_3525260878585642974_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/4cdaf8a922729e23b1f9453a7ab532ac/5E4087B2/t51.2885-15/e35/69079373_230056117964413_8908955190145680953_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/3fd38dec2c788921d5dc501002fa3ffe/5E2BD49F/t51.2885-15/e35/67795614_140967070444127_8789428848859141572_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/86be9e8d8182df8aa40e0eb551d61547/5E36E0D7/t51.2885-15/e35/67727523_498761377601950_8539253889979054276_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/09562ec9704e48d917d97da9823fa00d/5E62D9A2/t51.2885-15/e35/68713232_494137864746204_8194888566601392441_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/7e364dfe59262fa9ca7aa1947f8dddbc/5E429B3D/t51.2885-15/e35/67529503_151962279226516_4932364832489268962_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/5cac92d319ea2ddda9fde08aabd606e5/5E222E90/t51.2885-15/e35/67307649_147007136398674_3601008299876921356_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/cc3d840439236647bd7cfce3672009c3/5E30E6F3/t51.2885-15/e35/67725764_1331454693700047_3525260878585642974_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/4cdaf8a922729e23b1f9453a7ab532ac/5E4087B2/t51.2885-15/e35/69079373_230056117964413_8908955190145680953_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/3fd38dec2c788921d5dc501002fa3ffe/5E2BD49F/t51.2885-15/e35/67795614_140967070444127_8789428848859141572_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/86be9e8d8182df8aa40e0eb551d61547/5E36E0D7/t51.2885-15/e35/67727523_498761377601950_8539253889979054276_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p>Создание уютного помещения детям приносит родителям много положительных эмоций. Родители хотят сделать все на высшем уровне, а если отпрысков двое, то в двойном размере. Это связано с разными желаниями карапузов, с разницей в возрасте и различными половыми признаками, поэтому выбирая дизайн детской комнаты для двоих детей, следует принимать мнения ребят, уделять концентрированность сочным элементам, нестандартным решениям.</p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/B1Yd6HpJikK/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -375,11 +403,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->

@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="mebel.altera" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -68,81 +71,87 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="mebel">
-								<a href="../tags/./mebel.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel.png" alt="mebel" /></div>
-									<div class="stories__slide-txt">mebel</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="mebel">
+										<a href="../tags/./mebel.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel.png);"></div>
+											<div class="stories__slide-txt">mebel</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="altera">
+										<a href="../tags/./altera.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/altera.png);"></div>
+											<div class="stories__slide-txt">altera</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель">
+										<a href="../tags/./mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel-.png);"></div>
+											<div class="stories__slide-txt">мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="альтера">
+										<a href="../tags/./al-tera.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/al-tera.png);"></div>
+											<div class="stories__slide-txt">альтера</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="арзамас">
+										<a href="../tags/./arzamas.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/arzamas.png);"></div>
+											<div class="stories__slide-txt">арзамас</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="магазин мебели">
+										<a href="../tags/./magazin-mebeli.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/magazin-mebeli.png);"></div>
+											<div class="stories__slide-txt">магазин мебели</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель на заказ">
+										<a href="../tags/./mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">мебель на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="корпусная мебель">
+										<a href="../tags/./korpusnaya-mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/korpusnaya-mebel-.png);"></div>
+											<div class="stories__slide-txt">корпусная мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="корпусная мебель на заказ">
+										<a href="../tags/./korpusnaya-mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/korpusnaya-mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">корпусная мебель на заказ</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="altera">
-								<a href="../tags/./altera.html">
-									<div class="stories__slide-pic"><img src="../img/og/altera.png" alt="altera" /></div>
-									<div class="stories__slide-txt">altera</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель">
-								<a href="../tags/./mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel-.png" alt="мебель" /></div>
-									<div class="stories__slide-txt">мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="альтера">
-								<a href="../tags/./al-tera.html">
-									<div class="stories__slide-pic"><img src="../img/og/al-tera.png" alt="альтера" /></div>
-									<div class="stories__slide-txt">альтера</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="арзамас">
-								<a href="../tags/./arzamas.html">
-									<div class="stories__slide-pic"><img src="../img/og/arzamas.png" alt="арзамас" /></div>
-									<div class="stories__slide-txt">арзамас</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="магазин мебели">
-								<a href="../tags/./magazin-mebeli.html">
-									<div class="stories__slide-pic"><img src="../img/og/magazin-mebeli.png" alt="магазин мебели" /></div>
-									<div class="stories__slide-txt">магазин мебели</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель на заказ">
-								<a href="../tags/./mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--na-zakaz.png" alt="мебель на заказ" /></div>
-									<div class="stories__slide-txt">мебель на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="корпусная мебель">
-								<a href="../tags/./korpusnaya-mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/korpusnaya-mebel-.png" alt="корпусная мебель" /></div>
-									<div class="stories__slide-txt">корпусная мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="корпусная мебель на заказ">
-								<a href="../tags/./korpusnaya-mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/korpusnaya-mebel--na-zakaz.png" alt="корпусная мебель на заказ" /></div>
-									<div class="stories__slide-txt">корпусная мебель на заказ</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -167,20 +176,35 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/c73fd2b82903308222b2fe5d91f5c81d/5E64ECC1/t51.2885-15/e35/66422564_2549967381721097_234646012434354964_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/5c3bb6ada7e62a7e4b8b4560ca70cb4a/5E1A6285/t51.2885-15/e35/67378010_350953022508397_5034333124350190007_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/96f9ed74ccc24a18de7c458ed4f351d4/5E2DE639/t51.2885-15/e35/66940057_525582771315840_6807614977483571405_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/c0e0f2c2f34b3ee5b878280fb1b29b9a/5E63E213/t51.2885-15/e35/67771877_152740732578292_2827015958058979267_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/39e853b8f1a32c4223b05b6bc623a331/5E630F83/t51.2885-15/e35/66787465_653740808443362_8050693033757142336_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/c73fd2b82903308222b2fe5d91f5c81d/5E64ECC1/t51.2885-15/e35/66422564_2549967381721097_234646012434354964_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/53dc6cde74f281db88e14edde34aa4eb/5E41EF85/t51.2885-15/e35/67378010_350953022508397_5034333124350190007_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/96f9ed74ccc24a18de7c458ed4f351d4/5E2DE639/t51.2885-15/e35/66940057_525582771315840_6807614977483571405_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/c0e0f2c2f34b3ee5b878280fb1b29b9a/5E63E213/t51.2885-15/e35/67771877_152740732578292_2827015958058979267_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/39e853b8f1a32c4223b05b6bc623a331/5E630F83/t51.2885-15/e35/66787465_653740808443362_8050693033757142336_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=106" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p>Бежевый цвет – это классика спокойного интерьера. Некоторые называют его скучным. И они не правы. Бежевый цвет может быть разным. Скучен не оттенок, а его неправильное использование. Нужно лишь подобрать правильные нюансы тона и бежевый цвет заиграет.</p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/B1F6XS4pZO8/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -261,7 +285,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>8</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/a8d9355efacfe9f8df48ac847f91592d/5E3B4CA2/t51.2885-15/e35/68713232_494137864746204_8194888566601392441_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="Создание уютного помещения детям приносит родителям много положительных эмоций.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/09562ec9704e48d917d97da9823fa00d/5E62D9A2/t51.2885-15/e35/68713232_494137864746204_8194888566601392441_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="Создание уютного помещения детям приносит родителям много положительных эмоций.">
 								</div>
 								<div class="article-more__item-name">Создание уютного помещения детям приносит родителям много положительных эмоций.</div>
 							</a>
@@ -373,11 +397,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
