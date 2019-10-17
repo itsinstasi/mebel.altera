@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: http://mebel-altera.itsinsta.site/sitemap.xml
+Sitemap: https://mebel-altera.itsinsta.site/sitemap.xml
